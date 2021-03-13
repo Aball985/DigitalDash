@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/DigitalDash/static/css/main.63fda7f9.chunk.css",
-    "main.js": "/DigitalDash/static/js/main.f73c756c.chunk.js",
-    "main.js.map": "/DigitalDash/static/js/main.f73c756c.chunk.js.map",
+    "main.css": "/DigitalDash/static/css/main.8b6e622c.chunk.css",
+    "main.js": "/DigitalDash/static/js/main.3daaa29b.chunk.js",
+    "main.js.map": "/DigitalDash/static/js/main.3daaa29b.chunk.js.map",
     "runtime-main.js": "/DigitalDash/static/js/runtime-main.56d5f1e4.js",
     "runtime-main.js.map": "/DigitalDash/static/js/runtime-main.56d5f1e4.js.map",
-    "static/js/2.cd5f58fb.chunk.js": "/DigitalDash/static/js/2.cd5f58fb.chunk.js",
-    "static/js/2.cd5f58fb.chunk.js.map": "/DigitalDash/static/js/2.cd5f58fb.chunk.js.map",
+    "static/js/2.2b940050.chunk.js": "/DigitalDash/static/js/2.2b940050.chunk.js",
+    "static/js/2.2b940050.chunk.js.map": "/DigitalDash/static/js/2.2b940050.chunk.js.map",
     "index.html": "/DigitalDash/index.html",
-    "static/css/main.63fda7f9.chunk.css.map": "/DigitalDash/static/css/main.63fda7f9.chunk.css.map",
-    "static/js/2.cd5f58fb.chunk.js.LICENSE.txt": "/DigitalDash/static/js/2.cd5f58fb.chunk.js.LICENSE.txt"
+    "static/css/main.8b6e622c.chunk.css.map": "/DigitalDash/static/css/main.8b6e622c.chunk.css.map",
+    "static/js/2.2b940050.chunk.js.LICENSE.txt": "/DigitalDash/static/js/2.2b940050.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.56d5f1e4.js",
-    "static/js/2.cd5f58fb.chunk.js",
-    "static/css/main.63fda7f9.chunk.css",
-    "static/js/main.f73c756c.chunk.js"
+    "static/js/2.2b940050.chunk.js",
+    "static/css/main.8b6e622c.chunk.css",
+    "static/js/main.3daaa29b.chunk.js"
   ]
 }
