@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/DigitalDash/static/css/main.93916274.chunk.css",
-    "main.js": "/DigitalDash/static/js/main.244281c4.chunk.js",
-    "main.js.map": "/DigitalDash/static/js/main.244281c4.chunk.js.map",
+    "main.css": "/DigitalDash/static/css/main.4edb61ca.chunk.css",
+    "main.js": "/DigitalDash/static/js/main.b05c8478.chunk.js",
+    "main.js.map": "/DigitalDash/static/js/main.b05c8478.chunk.js.map",
     "runtime-main.js": "/DigitalDash/static/js/runtime-main.56d5f1e4.js",
     "runtime-main.js.map": "/DigitalDash/static/js/runtime-main.56d5f1e4.js.map",
     "static/js/2.58015952.chunk.js": "/DigitalDash/static/js/2.58015952.chunk.js",
     "static/js/2.58015952.chunk.js.map": "/DigitalDash/static/js/2.58015952.chunk.js.map",
     "index.html": "/DigitalDash/index.html",
-    "static/css/main.93916274.chunk.css.map": "/DigitalDash/static/css/main.93916274.chunk.css.map",
+    "static/css/main.4edb61ca.chunk.css.map": "/DigitalDash/static/css/main.4edb61ca.chunk.css.map",
     "static/js/2.58015952.chunk.js.LICENSE.txt": "/DigitalDash/static/js/2.58015952.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.56d5f1e4.js",
     "static/js/2.58015952.chunk.js",
-    "static/css/main.93916274.chunk.css",
-    "static/js/main.244281c4.chunk.js"
+    "static/css/main.4edb61ca.chunk.css",
+    "static/js/main.b05c8478.chunk.js"
   ]
 }
