@@ -1,19 +1,22 @@
-import '../styles/About/'
+import "../styles/About/About.css";
 function About() {
   return (
     <div>
       <h1>About us</h1>
-      <div className="">
-        <div id="goals">
+      <div className="about_Box">
+        <div className="goals">
           <h2>Goals of the app</h2>
-          <p>Inform people of vital information for their safety in a fun innovative way!</p>
+          <p>
+            Inform people of vital information for their safety in a fun
+            innovative way!
+          </p>
           <li></li>
         </div>
-        <div id="bios">
-          <div id="Austin">
+        <div className="bios">
+          <div className="">
             <p>about austin</p>
           </div>
-          <div id="Greg">
+          <div className="Greg">
             <p>about greg</p>
           </div>
           <div id="Halina"></div>
