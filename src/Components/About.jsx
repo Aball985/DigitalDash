@@ -10,19 +10,21 @@ function About() {
             Inform people of vital information for their safety in a fun
             innovative way!
           </p>
-          <li></li>
+          <ul>
+            <li>list</li>
+          </ul>
         </div>
         <div className="bios">
-          <div className="">
+          <div className="bio_Box">
             <p>about austin</p>
           </div>
-          <div className="Greg">
+          <div className="bio_Box">
             <p>about greg</p>
           </div>
-          <div id="Halina"></div>
+          <div className="bio_Box"></div>
           <p>about halina</p>
         </div>
-        <div id="Owen">
+        <div className="bio_Box">
           <p>about owen</p>
         </div>
       </div>
