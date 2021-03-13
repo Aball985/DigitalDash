@@ -7,9 +7,16 @@
     background: #034377;
     border: 2px solid black;
     padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 300px;
     .kotlin__icon {
       color: white;
-      font-size: 5rem;
+      padding: 0.5rem;
+      border: 4px solid;
+      font-size: 6rem;
+      border-radius: 12px;
     }
   }
   .right__Sidebar {
@@ -17,9 +24,14 @@
     border: 2px solid black;
     color: white;
     .top__Navbar {
-      background: #00a5cf;
+      background: #4f7ba0;
       padding: 2rem;
       border: 2px solid black;
+      h1 {
+        letter-spacing: 0.5rem;
+        font-weight: 900;
+        font-size: 2.5rem;
+      }
     }
   }
 }

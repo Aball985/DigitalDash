@@ -6,15 +6,26 @@
     flex: 0.35;
     background: #034377;
     border: 2px solid black;
-    padding: 1rem; }
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 300px; }
     .Dashboard .left__Sidebar .kotlin__icon {
       color: white;
-      font-size: 5rem; }
+      padding: 0.5rem;
+      border: 4px solid;
+      font-size: 6rem;
+      border-radius: 12px; }
   .Dashboard .right__Sidebar {
     flex: 1;
     border: 2px solid black;
     color: white; }
     .Dashboard .right__Sidebar .top__Navbar {
-      background: #00a5cf;
+      background: #4f7ba0;
       padding: 2rem;
       border: 2px solid black; }
+      .Dashboard .right__Sidebar .top__Navbar h1 {
+        letter-spacing: 0.5rem;
+        font-weight: 900;
+        font-size: 2.5rem; }

@@ -1,9 +1,12 @@
+.title {
+  text-align: center;
+}
 .about__Section {
   border: 4px solid black;
   display: flex;
   padding: 1rem;
   gap: 10px;
-  text-align: center;
+
   .left__Side {
     width: 300px;
     height: 500px;
@@ -19,7 +22,7 @@
     background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     .bio__Card {
