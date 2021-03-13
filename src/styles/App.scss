@@ -1,3 +1,5 @@
+$darkBlue: "#26DF7";
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -7,4 +9,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+body {
+  background: #264df7;
 }
