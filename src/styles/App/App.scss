@@ -9,7 +9,10 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
+
 body {
-  background: #264df7;
+  height: 100vh;
 }

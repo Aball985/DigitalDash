@@ -1,8 +1,9 @@
-import "./styles/App.scss";
+import Dashboard from "./Components/Dashboard";
+import "./styles/App/App.css";
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <Dashboard />
     </div>
   );
 }
