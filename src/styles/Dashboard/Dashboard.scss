@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 $bg: #fff;
-$text: #000000;
+$text: #034377;
 $light-pink: #ffffff;
 $pink: #cdd9e4;
 $dark-pink: #4f7ba0;
@@ -26,18 +26,17 @@ $pink-shadow: #022847;
       color: white;
       padding: 0.5rem;
       border: 4px solid;
-      font-size: 6rem;
+      font-size: 7rem;
       border-radius: 12px;
     }
     .navigation__buttons {
       font-weight: 900;
-      margin-top: 150px;
+      margin-top: 85px;
       justify-content: center;
       display: flex;
       flex-direction: column;
       gap: 4rem;
       button {
-        color: #0c3252 !important;
         position: relative;
         display: inline-block;
         cursor: pointer;
@@ -45,10 +44,9 @@ $pink-shadow: #022847;
         border: 0;
         vertical-align: middle;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-family: "Poppins", sans-serif;
         letter-spacing: 0.2rem;
-
         &.learn-more {
           font-weight: bold;
           color: $text;
