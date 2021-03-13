@@ -1,13 +1,25 @@
 .Dashboard {
   display: flex;
   .left__Sidebar {
+    color: white;
     height: 100vh;
-    flex: 0.2;
+    flex: 0.35;
     background: #034377;
     border: 2px solid black;
+    padding: 1rem;
+    .kotlin__icon {
+      color: white;
+      font-size: 5rem;
+    }
   }
   .right__Sidebar {
     flex: 1;
     border: 2px solid black;
+    color: white;
+    .top__Navbar {
+      background: #00a5cf;
+      padding: 2rem;
+      border: 2px solid black;
+    }
   }
 }

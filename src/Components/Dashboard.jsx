@@ -1,11 +1,15 @@
-import "../styles/Dashboard/Dashboard.css";
+import "../css/Dashboard/Dashboard.css";
 import About from "./About";
-
+import Test from "./Test";
+import Extra1 from "./Extra1";
+import { SiKotlin } from "react-icons/all";
 const Dashboard = () => {
   return (
     <div className="Dashboard">
       <div className="left__Sidebar">
-        <h1>Left Side</h1>
+        <span>
+          <SiKotlin className="kotlin__icon" />
+        </span>
       </div>
       <div className="right__Sidebar">
         <div className="top__Navbar">
@@ -16,6 +20,8 @@ const Dashboard = () => {
         </div>
       </div>
       <About />
+      <Test />
+      <Extra1 />
     </div>
   );
 };

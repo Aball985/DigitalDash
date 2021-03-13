@@ -3,32 +3,28 @@
   display: flex;
   padding: 1rem;
   gap: 10px;
-  text-align: center;
-  .left__Side {
+  text-align: center; }
+  .about__Section .left__Side {
     width: 300px;
     height: 500px;
-    background: rgb(255, 255, 255);
+    background: white;
     border: 1px solid black;
     text-align: center;
     border-radius: 10px 20px 10px 20px;
-    box-shadow: 3px 3px 3px 3px #034377;
-  }
-  .right__Side {
+    box-shadow: 3px 3px 3px 3px #034377; }
+  .about__Section .right__Side {
     width: 300px;
     height: 500px;
-    background: rgb(255, 255, 255);
+    background: white;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    justify-content: center;
-    .bio__Card {
-      background: rgb(255, 255, 255);
+    justify-content: center; }
+    .about__Section .right__Side .bio__Card {
+      background: white;
       padding: 10px;
       border: 1px solid black;
       text-align: center;
       border-radius: 0 20px 0 20px;
-      box-shadow: 3px 3px 4px 4px #034377;
-    }
-  }
-}
+      box-shadow: 3px 3px 4px 4px #034377; }

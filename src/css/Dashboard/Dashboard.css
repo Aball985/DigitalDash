@@ -1,0 +1,20 @@
+.Dashboard {
+  display: flex; }
+  .Dashboard .left__Sidebar {
+    color: white;
+    height: 100vh;
+    flex: 0.35;
+    background: #034377;
+    border: 2px solid black;
+    padding: 1rem; }
+    .Dashboard .left__Sidebar .kotlin__icon {
+      color: white;
+      font-size: 5rem; }
+  .Dashboard .right__Sidebar {
+    flex: 1;
+    border: 2px solid black;
+    color: white; }
+    .Dashboard .right__Sidebar .top__Navbar {
+      background: #00a5cf;
+      padding: 2rem;
+      border: 2px solid black; }

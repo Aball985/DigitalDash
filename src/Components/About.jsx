@@ -1,31 +1,35 @@
-import "../styles/About/About.css";
+import "../css/About/About.css";
 function About() {
   return (
     <div>
-      <h1>About us</h1>
-      <div className="about_Box">
-        <div className="goals">
-          <h2>Goals of the app</h2>
+      <div className="about__Section">
+        <h1>About Us</h1>
+        <div className="left__Side">
+          <h2>Goals</h2>
           <p>
-            Inform people of vital information for their safety in a fun
-            innovative way!
+            We use data from APIs 🛰️ to help inform people on safety issues such
+            as:
           </p>
-          <ul>
-            <li>list</li>
-          </ul>
+          <li>COVID</li>
+          <li>wild fires</li>
         </div>
-        <div className="bios">
-          <div className="bio_Box">
-            <p>about austin</p>
+        <div className="right__Side">
+          <div className="bio__Card">
+            <h3>Austin</h3>
+            <p>does cool stuff</p>
           </div>
-          <div className="bio_Box">
-            <p>about greg</p>
+          <div className="bio__Card">
+            <h3>Greg</h3>
+            <p>greg things</p>
           </div>
-          <div className="bio_Box"></div>
-          <p>about halina</p>
-        </div>
-        <div className="bio_Box">
-          <p>about owen</p>
+          <div className="bio__Card">
+            <h3>Halina</h3>
+            <p>turtle</p>
+          </div>
+          <div className="bio__Card">
+            <h3>Owen</h3>
+            <p>java epic</p>
+          </div>
         </div>
       </div>
     </div>
