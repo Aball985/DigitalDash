@@ -1,4 +1,5 @@
 import "../styles/Dashboard/Dashboard.css";
+import About from "./About";
 
 const Dashboard = () => {
   return (
@@ -7,12 +8,14 @@ const Dashboard = () => {
         <h1>Left Side</h1>
       </div>
       <div className="right__Sidebar">
-        <h1>Right Side</h1>
-        <div className="top__Navbar"></div>
+        <div className="top__Navbar">
+          <h1>Top Navbar</h1>
+        </div>
         <div className="middle__Content">
           <h1>This is content</h1>
         </div>
       </div>
+      <About />
     </div>
   );
 };

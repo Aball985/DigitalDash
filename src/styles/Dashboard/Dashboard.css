@@ -10,11 +10,13 @@
       -ms-flex: 0.2;
           flex: 0.2;
   background: #034377;
+  border: 2px solid black;
 }
 
 .Dashboard .right__Sidebar {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  border: 2px solid black;
 }
 /*# sourceMappingURL=Dashboard.css.map */
