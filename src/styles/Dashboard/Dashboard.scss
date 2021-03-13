@@ -1,6 +1,10 @@
-.left__Sidebar {
-  background: red;
-}
-.right__Sidebar {
-  background: blue;
+.Dashboard {
+  display: flex;
+  .left__Sidebar {
+    height: 100vh;
+    flex: 0.2;
+  }
+  .right__Sidebar {
+    flex: 1;
+  }
 }
