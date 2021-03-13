@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import Map from "./Map";
 import Loader from "./Loader";
 import Header from "./Header";
-
 const Dashboard = () => {
   const [eventData, setEventData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -28,9 +27,18 @@ const Dashboard = () => {
   return (
     <div className="Dashboard">
       <div className="left__Sidebar">
-        <span>
-          <SiKotlin className="kotlin__icon" />
-        </span>
+        <div className="icon">
+          <span>
+            <SiKotlin className="kotlin__icon" />
+          </span>
+        </div>
+
+        <div className="navigation__buttons">
+          <button className="learn-more">Home</button>
+          <button className="learn-more">NASA Event Tracker</button>
+          <button className="learn-more">Example</button>
+          <button className="learn-more">Example</button>
+        </div>
       </div>
       <div className="right__Sidebar">
         <div className="top__Navbar">
@@ -40,10 +48,8 @@ const Dashboard = () => {
           <h1>This is content</h1>
         </div>
       </div>
-      <About />
 
-      <Header />
-      {!loading ? <Map eventData={eventData} /> : <Loader />}
+      {/* {!loading ? <Map eventData={eventData} /> : <Loader />} */}
     </div>
   );
 };
