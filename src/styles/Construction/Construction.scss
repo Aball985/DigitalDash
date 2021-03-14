@@ -1,0 +1,17 @@
+.construction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    margin-top: 5rem;
+    span{
+        margin-top: 2rem;
+        font-size: 6.5rem;
+        color: #034377;
+    }
+    p{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+}

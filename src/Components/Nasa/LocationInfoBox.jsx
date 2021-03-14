@@ -1,6 +1,7 @@
 const LocationInfoBox = ({ info }) => {
   return (
     <div className="location-info">
+      <div className="location-icon"> {info.emoji} </div>
       <h2>Event Location Info</h2>
       <ul>
         <li>

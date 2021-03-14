@@ -18,7 +18,7 @@ const NATURAL_EVENT_EARTHQUAKES = 16;
 
 const NATURAL_EVENT_REGISTRY = [
   { id: 8, emoji: <p>🔥</p> },
-  { id: 9, emoji: <p>💦</p> }, // Flood
+  { id: 9, emoji: <p>🌊</p> }, // Flood
   { id: 10, emoji: <p>⛈️</p> },
   { id: 12, emoji: <p>🌋</p> },
   { id: 15, emoji: <p>🧊</p> },
@@ -44,11 +44,11 @@ const Map = ({ eventData, center, zoom }) => {
       return null;
     }
 
-    let onClick = () => setLocationInfo({ id: ev.id, title: ev.title });
-
     for (let i = 0; i < NATURAL_EVENT_REGISTRY.length; i++) {
       let event = NATURAL_EVENT_REGISTRY[i];
       if (id === event.id) {
+        let onClick = () =>
+          setLocationInfo({ id: ev.id, title: ev.title, emoji: event.emoji });
         return (
           <GenericLocationMarker
             text={event.emoji}
@@ -74,6 +74,75 @@ const Map = ({ eventData, center, zoom }) => {
         {markers}
       </GoogleMapReact>
       {locationInfo && <LocationInfoBox info={locationInfo} />}
+      <div className="key-info">
+        <h2>Event Key</h2>
+        <div className="legend">
+          <span>
+            <input
+              type="checkbox"
+              className="checkmark"
+              defaultChecked={true}
+            />
+            <p> 🔥 - Wildfires</p>
+          </span>
+          <span>
+            <input
+              type="checkbox"
+              className="checkmark"
+              defaultChecked={true}
+            />
+            <p> 🌊 - Floods</p>
+          </span>
+          <span>
+            <input
+              type="checkbox"
+              className="checkmark"
+              defaultChecked={true}
+            />
+            <p> ⛈️ - Severe Storms</p>
+          </span>
+          <span>
+            <input
+              type="checkbox"
+              className="checkmark"
+              defaultChecked={true}
+            />
+            <p> 🌋 - Volcanoes</p>
+          </span>
+          <span>
+            <input
+              type="checkbox"
+              className="checkmark"
+              defaultChecked={true}
+            />
+            <p> 🧊 - Icebergs</p>
+          </span>
+          <span>
+            <input
+              type="checkbox"
+              className="checkmark"
+              defaultChecked={true}
+            />
+            <p> 🏠 - Earthquakes</p>
+          </span>
+          <span>
+            <input
+              type="checkbox"
+              className="checkmark"
+              defaultChecked={true}
+            />
+            <p> ❄️ - Winter Storms</p>
+          </span>
+          <span>
+            <input
+              type="checkbox"
+              className="checkmark"
+              defaultChecked={true}
+            />
+            <p> 🌡️ - Heat Waves</p>
+          </span>
+        </div>
+      </div>
     </div>
   );
 };

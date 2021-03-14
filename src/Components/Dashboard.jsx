@@ -1,4 +1,5 @@
 //Add React Router
+import React from "react";
 import "../css/Dashboard/Dashboard.css";
 import About from "./About";
 import { GiEarthAmerica } from "react-icons/all";
@@ -7,7 +8,7 @@ import Map from "./Nasa/Map";
 import Loader from "./Nasa/Loader";
 import Homepage from "./Homepage";
 import Covid from "./Covid";
-import Darkmode from "./Darkmode/Darkmode";
+import DarkModeToggle from "./Darkmode/DarkModeToggle";
 import NasaLogo from "../assets/NASA_logo.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -41,7 +42,7 @@ const Dashboard = () => {
           </div>
 
           <div className="navigation__buttons">
-            <Link to="/">
+            <Link to="/DigitalDash">
               <button className="learn-more">Home</button>
             </Link>
             <Link to="/NasaEventTracker">
@@ -53,12 +54,12 @@ const Dashboard = () => {
             <Link to="/About">
               <button className="learn-more">About</button>
             </Link>
-            <Darkmode />
+            <DarkModeToggle />
           </div>
         </div>
         <div className="right__Sidebar">
           <div className="top__Navbar">
-            <h1>Kotlin Vibes</h1>
+            <h1>Digital Dashboard</h1>
             <span>
               <img src={NasaLogo} alt="" className="Nasa" />
             </span>
@@ -66,8 +67,9 @@ const Dashboard = () => {
           <div className="middle__Content">
             <Switch>
               <Route path="/" exact component={Homepage}></Route>
+              <Route path="/DigitalDash" exact component={Homepage}></Route>
               <Route path="/Map" exact component={Map}></Route>
-              {/* <Route path="/Covid" exact component={Covid}></Route> */}
+              <Route path="/Covid" exact component={Covid}></Route>
               <Route path="/About" exact component={About}></Route>
               {!loading ? <Map eventData={eventData} /> : <Loader />}
             </Switch>

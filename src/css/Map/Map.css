@@ -29,7 +29,29 @@
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   font-size: 18px;
-  color: #fff; }
+  color: #fff;
+  padding-left: 50px; }
+
+.location-icon {
+  font-size: 30px; }
+
+.key-info {
+  position: relative;
+  bottom: 95%;
+  left: 2%;
+  width: 20vw;
+  min-height: 200px;
+  padding: 20px;
+  height: 50vh;
+  background-color: rgba(255, 255, 255, 0.863);
+  border-radius: 12px;
+  font-size: 18px;
+  color: black;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
 
 .map-buttons {
   position: fixed;
@@ -42,10 +64,60 @@
   border-radius: 10px;
   font-size: 14px;
   color: #808080; }
+  .map-buttons .navigation__buttons {
+    font-weight: 500;
+    margin-top: 5px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+    .map-buttons .navigation__buttons button {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      outline: none;
+      border: 0;
+      vertical-align: middle;
+      text-decoration: none;
+      font-size: 1rem;
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 0.2rem; }
+  .map-buttons .location-info ul {
+    list-style-type: none;
+    padding: 0; }
+  .map-buttons .location-info li {
+    padding: 5px 0; }
 
-.location-info ul {
-  list-style-type: none;
-  padding: 0; }
-
-.location-info li {
-  padding: 5px 0; }
+.legend span {
+  display: flex;
+  align-items: center;
+  margin: 20px 40px;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */ }
+  .legend span p {
+    margin-left: 20px; }
+  .legend span .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  .legend span .checkmark {
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    cursor: pointer; }
+  .legend span .container:hover input ~ .checkmark {
+    background-color: #ccc; }
+  .legend span .container input:checked ~ .checkmark {
+    background-color: #2196f3; }
+  .legend span .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none; }
+  .legend span .container input:checked ~ .checkmark:after {
+    display: block; }

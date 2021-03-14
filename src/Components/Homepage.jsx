@@ -1,4 +1,5 @@
 import "../css/Homepage/Homepage.css";
+import "./Darkmode/DarkModeToggle";
 
 const Homepage = () => {
   return (

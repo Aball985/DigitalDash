@@ -1,18 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
+// light theme
+//$light-pink: #ffffff;
+//$color-theme-light: #ffffff;
+//$dark-blue: #4f7ba0;
+//$bg-theme-light: #4f7ba0;
+// dark theme
+// $dm-purple: #bb86fc;
+//$color-theme-dark: #bb86fc;
+//$dm-bg: black;
+//$bg-theme-dark: black;
+
 $bg: rgb(255, 255, 255);
-$text: #034377;
+//      "text": #034377;
 $light-pink: #ffffff;
 $lblue: #cdd9e4;
 $dark-blue: #4f7ba0;
 $blue-border: #000000;
 $blue-shadow: #022847;
 
-$dm-purple: #bb86fc;
-$dm-neon: #3700b3;
-$dm-teal: #03dac6;
-$dm-bg: black;
-$dm-gray: #121212;
+//       "dm-purple": #bb86fc;
+//       "dm-neon": #3700b3;
+//       "dm-teal": #03dac6;
+//       "dm-bg": black;
+//       "dm-gray": #121212;
 
 .Dashboard {
   display: flex;
@@ -56,10 +67,10 @@ $dm-gray: #121212;
         letter-spacing: 0.2rem;
         &.learn-more {
           font-weight: bold;
-          color: $text;
+          color: #034377;
           text-transform: uppercase;
           padding: 1.25em 2em;
-          background: $bg;
+          background: #cdd9e4;
           border: 2px solid $blue-border;
           border-radius: 0.75em;
           transform-style: preserve-3d;
@@ -107,9 +118,12 @@ $dm-gray: #121212;
 
   .right__Sidebar {
     flex: 1;
-
+    //color: $color-theme-light;
+    // background-color: $bg-theme-light;
     .top__Navbar {
       padding: 2rem;
+      color: white;
+      background-color: #3b5998;
       border-top: 2px solid black;
       border-right: 2px solid black;
       border-bottom: 2px solid black;
@@ -127,15 +141,21 @@ $dm-gray: #121212;
       }
     }
   }
-  .right__Sidebar.light {
-    $color: $light-pink;
-    $background-color: $dark-blue;
-  }
-  .right__Sidebar.dark {
-    $color: $dm-purple;
-    $background-color: $dm-bg;
-  }
 }
+// .Dashboard.theme-light{
+//   .right__Sidebar {
+//      color: $color-theme;
+//      background-color: $bg-theme;
+//    }
+// }
+
+//   .theme-dark{
+//  .right__Sidebar {
+//      color: $color-theme-dark;
+//      background-color: $bg-theme-dark;
+//    }
+//  }
+// }
 
 // .middle__content {
 //   height: ;
