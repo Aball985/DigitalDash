@@ -1,26 +1,66 @@
 import { useState } from "react";
 import GoogleMapReact from "google-map-react";
-import LocationMarker from "./LocationMarker";
+import GenericLocationMarker from "./markers/GenericLocationMarker";
 import LocationInfoBox from "./LocationInfoBox";
 import "../../css/Map/Map.css";
-
+import { Icon } from "@iconify/react";
+import {
+  RiEarthquakeFill,
+  AiOutlineFire,
+  GiIceberg,
+  GiFlood,
+  IoThunderstorm,
+} from "react-icons/all";
 // define constants
-const NATURAL_EVENT_WILDFIRE = 8;
+
+const NATURAL_EVENT_SEVERE_STORMS = 10;
+const NATURAL_EVENT_EARTHQUAKES = 16;
+
+const NATURAL_EVENT_REGISTRY = [
+  { id: 8, emoji: <p>🔥</p> },
+  { id: 9, emoji: <p>💦</p> }, // Flood
+  { id: 10, emoji: <p>⛈️</p> },
+  { id: 12, emoji: <p>🌋</p> },
+  { id: 15, emoji: <p>🧊</p> },
+  { id: 16, emoji: <p>🏠</p> }, //earthquake
+  { id: 17, emoji: <p>❄️</p> },
+  { id: 18, emoji: <p>🌡️</p> },
+];
 
 const Map = ({ eventData, center, zoom }) => {
   const [locationInfo, setLocationInfo] = useState(null);
 
   const markers = eventData.map((ev, index) => {
-    if (ev.categories[0].id === NATURAL_EVENT_WILDFIRE) {
-      return (
-        <LocationMarker
-          key={index}
-          lat={ev.geometries[0].coordinates[1]}
-          lng={ev.geometries[0].coordinates[0]}
-          onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
-        />
-      );
+    //switch statement for different events here, 8 = wildfires
+    // 15 = icebergs
+    //10 = Tropical Cyclones
+
+    let id = ev.categories[0].id;
+
+    let lat = ev.geometries[0].coordinates[1];
+    let lng = ev.geometries[0].coordinates[0];
+
+    if (isNaN(lat) || isNaN(lng)) {
+      return null;
     }
+
+    let onClick = () => setLocationInfo({ id: ev.id, title: ev.title });
+
+    for (let i = 0; i < NATURAL_EVENT_REGISTRY.length; i++) {
+      let event = NATURAL_EVENT_REGISTRY[i];
+      if (id === event.id) {
+        return (
+          <GenericLocationMarker
+            text={event.emoji}
+            key={index}
+            lat={lat}
+            lng={lng}
+            onClick={onClick}
+          />
+        );
+      }
+    }
+
     return null;
   });
 
@@ -40,8 +80,8 @@ const Map = ({ eventData, center, zoom }) => {
 
 Map.defaultProps = {
   center: {
-    lat: 42.3265,
-    lng: -122.8756,
+    lat: 39.9612,
+    lng: -82.9988,
   },
   zoom: 6,
 };

@@ -5,10 +5,10 @@ import { GiEarthAmerica } from "react-icons/all";
 import { useState, useEffect } from "react";
 import Map from "./Nasa/Map";
 import Loader from "./Nasa/Loader";
-import Header from "./Nasa/Header";
 import Homepage from "./Homepage";
 import Covid from "./Covid";
-
+import Darkmode from "./Darkmode/Darkmode";
+import NasaLogo from "../assets/NASA_logo.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const Dashboard = () => {
@@ -53,17 +53,21 @@ const Dashboard = () => {
             <Link to="/About">
               <button className="learn-more">About</button>
             </Link>
+            <Darkmode />
           </div>
         </div>
         <div className="right__Sidebar">
           <div className="top__Navbar">
             <h1>Kotlin Vibes</h1>
+            <span>
+              <img src={NasaLogo} alt="" className="Nasa" />
+            </span>
           </div>
           <div className="middle__Content">
             <Switch>
               <Route path="/" exact component={Homepage}></Route>
               <Route path="/Map" exact component={Map}></Route>
-              <Route path="/Covid" exact component={Covid}></Route>
+              {/* <Route path="/Covid" exact component={Covid}></Route> */}
               <Route path="/About" exact component={About}></Route>
               {!loading ? <Map eventData={eventData} /> : <Loader />}
             </Switch>

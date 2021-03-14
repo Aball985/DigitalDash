@@ -1,5 +1,6 @@
 .title {
-  text-align: center; }
+  text-align: center;
+  color: black; }
 
 .about__Section {
   display: flex;
@@ -15,10 +16,10 @@
   .about__Section .left__Side {
     width: 400px;
     height: 500px;
-    background: white;
-    border: 1px solid black;
-    border-radius: 10px 20px 10px 20px;
-    box-shadow: 3px 3px 3px 3px #034377; }
+    background: #ffffff;
+    border: 2px solid #034377;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 6px 6px 0 0 #4f7ba0; }
   .about__Section .right__Side {
     width: 600px;
     height: 500px;
@@ -31,8 +32,8 @@
     .about__Section .right__Side .bio__Card {
       background: white;
       padding: 10px;
-      border: 1px solid black;
+      border: 2px solid #034377;
       text-align: center;
-      border-radius: 0 20px 0 20px;
-      box-shadow: 3px 3px 4px 4px #034377;
+      border-radius: 20px;
+      box-shadow: 6px 6px 0 0 #4f7ba0;
       width: 400px; }

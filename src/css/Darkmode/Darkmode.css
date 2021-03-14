@@ -1,0 +1,25 @@
+#darkMode {
+  background: white;
+  background-size: 30px 30px;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 1s ease-in-out, filter 1s ease-in-out;
+  filter: grayscale(100%); }
+  #darkMode .moon {
+    color: black; }
+
+#darkMode:hover,
+#darkMode:focus {
+  transition: ease-in-out 1s;
+  filter: none;
+  background-color: black;
+  cursor: pointer; }
+  #darkMode:hover .moon,
+  #darkMode:focus .moon {
+    color: yellow; }
+
+#darkMode.clicked {
+  filter: none !important;
+  background-color: black; }
