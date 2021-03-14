@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/DigitalDash/static/css/main.c9099f2b.chunk.css",
-    "main.js": "/DigitalDash/static/js/main.c7065004.chunk.js",
-    "main.js.map": "/DigitalDash/static/js/main.c7065004.chunk.js.map",
+    "main.css": "/DigitalDash/static/css/main.86d6b3ce.chunk.css",
+    "main.js": "/DigitalDash/static/js/main.9ab04e6e.chunk.js",
+    "main.js.map": "/DigitalDash/static/js/main.9ab04e6e.chunk.js.map",
     "runtime-main.js": "/DigitalDash/static/js/runtime-main.56d5f1e4.js",
     "runtime-main.js.map": "/DigitalDash/static/js/runtime-main.56d5f1e4.js.map",
-    "static/js/2.c76cfc40.chunk.js": "/DigitalDash/static/js/2.c76cfc40.chunk.js",
-    "static/js/2.c76cfc40.chunk.js.map": "/DigitalDash/static/js/2.c76cfc40.chunk.js.map",
+    "static/js/2.b2a08f13.chunk.js": "/DigitalDash/static/js/2.b2a08f13.chunk.js",
+    "static/js/2.b2a08f13.chunk.js.map": "/DigitalDash/static/js/2.b2a08f13.chunk.js.map",
     "index.html": "/DigitalDash/index.html",
-    "static/css/main.c9099f2b.chunk.css.map": "/DigitalDash/static/css/main.c9099f2b.chunk.css.map",
-    "static/js/2.c76cfc40.chunk.js.LICENSE.txt": "/DigitalDash/static/js/2.c76cfc40.chunk.js.LICENSE.txt"
+    "static/css/main.86d6b3ce.chunk.css.map": "/DigitalDash/static/css/main.86d6b3ce.chunk.css.map",
+    "static/js/2.b2a08f13.chunk.js.LICENSE.txt": "/DigitalDash/static/js/2.b2a08f13.chunk.js.LICENSE.txt",
+    "static/media/NASA_logo.c43aa9ef.png": "/DigitalDash/static/media/NASA_logo.c43aa9ef.png"
   },
   "entrypoints": [
     "static/js/runtime-main.56d5f1e4.js",
-    "static/js/2.c76cfc40.chunk.js",
-    "static/css/main.c9099f2b.chunk.css",
-    "static/js/main.c7065004.chunk.js"
+    "static/js/2.b2a08f13.chunk.js",
+    "static/css/main.86d6b3ce.chunk.css",
+    "static/js/main.9ab04e6e.chunk.js"
   ]
 }
