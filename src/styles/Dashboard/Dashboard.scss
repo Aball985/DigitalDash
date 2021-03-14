@@ -94,6 +94,10 @@ $pink-shadow: #022847;
       }
     }
   }
+  .p__wrapper {
+    font-size: 1.2rem;
+  }
+
   .right__Sidebar {
     flex: 1;
     color: white;
@@ -110,4 +114,8 @@ $pink-shadow: #022847;
       }
     }
   }
+}
+
+.middle__content {
+  height: 1000px;
 }

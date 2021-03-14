@@ -3,10 +3,13 @@ import "../css/Dashboard/Dashboard.css";
 import About from "./About";
 import { GiEarthAmerica } from "react-icons/all";
 import { useState, useEffect } from "react";
-import Map from "./Map";
-import Loader from "./Loader";
-import Header from "./Header";
+import Map from "./Nasa/Map";
+import Loader from "./Nasa/Loader";
+import Header from "./Nasa/Header";
 import Homepage from "./Homepage";
+import Covid from "./Covid";
+
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [eventData, setEventData] = useState([]);
@@ -28,31 +31,46 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className="Dashboard">
-      <div className="left__Sidebar">
-        <div className="icon">
-          <span>
-            <GiEarthAmerica className="kotlin__icon" />
-          </span>
-        </div>
+    <Router>
+      <div className="Dashboard">
+        <div className="left__Sidebar">
+          <div className="icon">
+            <span>
+              <GiEarthAmerica className="kotlin__icon" />
+            </span>
+          </div>
 
-        <div className="navigation__buttons">
-          <button className="learn-more">Home</button>
-          <button className="learn-more">NASA Event Tracker</button>
-          <button className="learn-more">COVID</button>
-          <button className="learn-more">About</button>
+          <div className="navigation__buttons">
+            <Link to="/">
+              <button className="learn-more">Home</button>
+            </Link>
+            <Link to="/NasaEventTracker">
+              <button className="learn-more">NASA Event Tracker</button>
+            </Link>
+            <Link to="/Covid">
+              <button className="learn-more">COVID</button>
+            </Link>
+            <Link to="/About">
+              <button className="learn-more">About</button>
+            </Link>
+          </div>
+        </div>
+        <div className="right__Sidebar">
+          <div className="top__Navbar">
+            <h1>Kotlin Vibes</h1>
+          </div>
+          <div className="middle__Content">
+            <Switch>
+              <Route path="/" exact component={Homepage}></Route>
+              <Route path="/Map" exact component={Map}></Route>
+              <Route path="/Covid" exact component={Covid}></Route>
+              <Route path="/About" exact component={About}></Route>
+              {!loading ? <Map eventData={eventData} /> : <Loader />}
+            </Switch>
+          </div>
         </div>
       </div>
-      <div className="right__Sidebar">
-        <div className="top__Navbar">
-          <h1>Kotlin Vibes</h1>
-        </div>
-        <div className="middle__Content">
-          <Homepage />
-          {/* {!loading ? <Map eventData={eventData} /> : <Loader />} */}
-        </div>
-      </div>
-    </div>
+    </Router>
   );
 };
 

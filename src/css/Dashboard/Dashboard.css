@@ -74,6 +74,8 @@
             .Dashboard .left__Sidebar .navigation__buttons button.learn-more:active::before {
               box-shadow: 0 0 0 2px #000000, 0 0 #022847;
               transform: translate3d(0, 0, -1em); }
+  .Dashboard .p__wrapper {
+    font-size: 1.2rem; }
   .Dashboard .right__Sidebar {
     flex: 1;
     color: white; }
@@ -87,3 +89,6 @@
         letter-spacing: 0.5rem;
         font-weight: 900;
         font-size: 2.5rem; }
+
+.middle__content {
+  height: 1000px; }

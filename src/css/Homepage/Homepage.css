@@ -11,9 +11,10 @@
 
 .wrapper {
   display: flex;
-  flex-direction: column;
+  margin-top: 5rem;
+  align-items: center;
   justify-content: center;
-  text-align: center; }
+  flex-direction: column; }
 
 .waves {
   position: fixed;
@@ -45,14 +46,17 @@
 .wave-wrap {
   display: flex;
   justify-content: center;
-  margin-top: 5rem; }
+  margin-top: 4rem;
+  align-items: center; }
+  .wave-wrap h1 {
+    margin-right: 15px; }
 
 .wave {
   font-size: 60px;
   font-weight: bold;
   font-family: sans-serif;
   text-align: center;
-  color: #5ac5ff; }
+  color: #4f7ba0; }
 
 .w {
   animation: wave 1.5s linear infinite; }
@@ -77,5 +81,15 @@
   75% {
     transform: rotate(-10deg); } }
 
-p {
-  margin-top: 2rem; }
+.p__wrapper {
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
+  width: 500px; }
+
+.wrapper__title {
+  display: flex;
+  align-items: center; }
+  .wrapper__title .rocket {
+    font-size: 4rem;
+    margin-left: 15px; }

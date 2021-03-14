@@ -2,7 +2,8 @@ import { useState } from "react";
 import GoogleMapReact from "google-map-react";
 import LocationMarker from "./LocationMarker";
 import LocationInfoBox from "./LocationInfoBox";
-import "../css/Map/Map.css";
+import "../../css/Map/Map.css";
+
 // define constants
 const NATURAL_EVENT_WILDFIRE = 8;
 

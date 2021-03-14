@@ -16,13 +16,14 @@ function About() {
             We use data from APIs 🛰️ to help inform people on safety issues such
             as:
           </p>
+
           <li>COVID</li>
           <li>wild fires</li>
         </div>
         <div className="right__Side">
           <div className="bio__Card">
             <h3>Austin</h3>
-            <p>does cool stuff</p>
+            <p>Senior in college. Loves react idk.</p>
           </div>
           <div className="bio__Card">
             <h3>
@@ -43,7 +44,10 @@ function About() {
             <h3>
               Owen <GiAppleMaggot />
             </h3>
-            <p>I'm a freshman in highschool and I like to code stuff.</p>
+            <p>
+              I'm a freshman in highschool and I like to work on small little
+              projects.
+            </p>
           </div>
         </div>
       </div>
