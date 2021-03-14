@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 html {
   box-sizing: border-box;
   font-size: 100%; }
@@ -13,4 +12,4 @@ html {
 
 body {
   height: 100vh;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Quicksand", sans-serif; }

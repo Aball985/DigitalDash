@@ -15,3 +15,4 @@ This project will contain a unique dashboard to view a wide range of metrics. ðŸ
 4. Github pages
 5. Iconify
 6. Iconify core
+7. React Router
